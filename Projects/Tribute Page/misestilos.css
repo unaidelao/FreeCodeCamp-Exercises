@@ -1,0 +1,61 @@
+body {
+  margin: 40px 20px;
+}
+
+#main {
+  background-color: #d2d2e0;
+}
+
+#title {
+  background-color: #9696b6;
+  font-variant: small-caps;
+  text-shadow: 2px 4px 10px lightgrey;
+}
+
+h1 {
+  font-family: Georgia;
+  text-align: center;
+  font-size: 38px;
+}
+
+h3 {
+  font-family: Georgia;
+  text-align: center;
+}
+
+h4 {
+  line-height: 1.6;
+  text-indent: 35px;
+}
+
+#teslaImg {
+  padding: 10px;
+  background-color: #9696b6;
+  width: 25%;
+  height: 25%;
+}
+
+#bio {
+  border-left-width: 25px;
+  width: 50%;
+  text-align: justify;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+li {
+  font-size: medium;
+  line-height: 1.6;
+  text-indent: 5px
+}
+
+p {
+  font-size: medium;
+  text-align: right;
+}
+
+#footer {
+  margin-right: 20px;
+}

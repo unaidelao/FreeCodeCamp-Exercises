@@ -1,0 +1,59 @@
+body {
+  padding-top: 50px;
+  background-color: rgba(181, 217, 226, 0.5);
+  overflow-x: hidden;
+  font-family: "Courier New", courier, monospace;
+  font-size: 18px;
+}
+
+h2 {
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+.jumbotron {
+  background-image: url("http://www.publicdomainpictures.net/pictures/40000/velka/concrete-texture-background-blue.jpg");
+  font-family: 'Rock Salt', cursive;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutPicture {
+  margin-top: 30px;
+}
+#aboutMe {
+  background-color: #ccf5ff;
+  margin-top: -30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#frontEnd {
+  background-color: #40737f;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#fullStack {
+  background-color: #80e6ff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#contactMe {
+  background-color: #b5d9e2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#footer {
+  margin-right: 30px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.indent {
+  text-indent: 2em;
+}

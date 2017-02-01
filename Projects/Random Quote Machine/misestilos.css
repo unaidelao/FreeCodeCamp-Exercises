@@ -1,0 +1,37 @@
+body{
+  font: 20px/1.5 Arial, Helvetica, sans-serif;
+  padding:0px;
+  margin:0px;
+  background-color: #558989;
+  text-align:center;
+}
+
+#main{
+  margin-top:70px;
+}
+
+.box{
+  padding:20px;
+  border-radius:3px;
+  border:#355656 solid 2px;
+  margin-bottom:5px;
+  background:#84D5D5;
+}
+
+footer{
+  padding: 2px;
+  margin-top:70px;
+  background-color:#329D9D;
+  color:#355656;
+  font-size:14px;
+  text-align:center;
+}
+
+a{
+  color:lightgrey;
+  text-decoration:none;
+}
+
+a:hover{
+  color:#44D5D5;
+}

@@ -1,0 +1,28 @@
+body{
+  font-size:45px;;
+  background-color:lightgreen;
+}
+
+.well{
+  margin-top:75px;
+  background-color: rgba(245, 245, 245, 0.4);
+}
+
+#title{
+  font-family: 'Permanent Marker', cursive;
+}
+
+#city-country,#weatherType,#fahrenheit{
+  margin-top:10px;
+  font-family: 'Patrick Hand SC', cursive;
+}
+
+#footer{
+  margin-top:10px;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size:20px;
+}
+
+a:link{
+  text-decoration:none;
+}

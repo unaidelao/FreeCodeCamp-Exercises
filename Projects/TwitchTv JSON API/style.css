@@ -1,0 +1,29 @@
+body {
+  background-color:#ffe082;
+}
+
+#header {
+  background-color:#ffca28;
+  border:5px black solid;
+  border-radius:10px;
+}
+
+#infoBar {
+  margin-top:5px;
+}
+
+.logo {
+  width:100px;
+  border-radius:50%;
+}
+
+.col-md-4 {
+  padding:5px;
+}
+
+.row {
+  background-color:#ffca28;
+  border:2px black solid;
+  border-radius:5px;
+  margin-top:5px;
+}

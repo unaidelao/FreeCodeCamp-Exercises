@@ -1,0 +1,64 @@
+body{
+  font: 20px/1.5 Arial, Helvetica, sans-serif;
+  padding:0px;
+  margin:0px;
+  background-color: #558989;
+  text-align:center;
+}
+
+#main{
+  margin-top:70px;
+}
+
+#calculatorFrame{
+  padding:10px;
+  margin:auto;
+  border-radius:5px;
+  border:#355656 solid 2px;
+  margin-bottom:5px;
+  background-color: grey;
+  height: 400px;
+  width: 250px;
+  font-family: 'Ubuntu Mono';
+}
+
+#lcdFrame{
+  height: 40px;
+  width:auto;
+  margin:auto;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: right;
+  padding-right: 20px
+}
+
+#lcdText{
+  font-family: 'Consolas';
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#buttonsFrame{
+  background-color: #D7CCC8;
+  border: #355656 solid 2px;
+  margin: auto;
+}
+
+footer{
+  padding: 2px;
+  margin-top:70px;
+  background-color:#329D9D;
+  color:#355656;
+  font-size:14px;
+  text-align:center;
+}
+
+a{
+  color:lightgrey;
+  text-decoration:none;
+}
+
+a:hover{
+  color:#44D5D5;
+}

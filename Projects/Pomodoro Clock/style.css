@@ -1,0 +1,50 @@
+body{
+  text-align: center;
+  background-color: #90E9E9;
+}
+
+#mainTitle{
+  border: #329D9D solid 20px;
+  border-radius: 5px;
+  font-family: 'Yellowtail', cursive;
+}
+
+#status{
+  font-family: 'Yellowtail', cursive;
+  font-size: 35px;
+}
+
+h4{
+  font-weight: bold;
+}
+
+#clock{
+	width: 200px;
+	height: 200px;
+  border: #329D9D solid 5px;
+  border-radius: 5px;
+  margin:auto;
+  cursor: pointer;
+}
+
+#timer{
+  margin-top: 5px;
+  font-size: 50px;
+}
+
+footer{
+  padding: 2px;
+  margin-top:70px;
+  background-color:#329D9D;
+  color:#355656;
+  font-size:14px;
+}
+
+a{
+  color:lightgrey;
+  text-decoration:none;
+}
+
+a:hover{
+  color:#44D5D5;
+}

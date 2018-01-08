@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pomodoro Clock</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <!-- my CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+  </head>
+  <body>
+    <section class="container-fluid">
+      <article id="mainTitle">
+        <div class="row">
+          <div class="col">
+            <h1>Pomodoro Clock</h1>
+            <h3>FreeCodeCamp Project</h3>
+          </div>
+        </div>
+      </article>
+      <!-- Zona de botones para el tiempo -->
+      <article>
+        <div class="row">
+          <div class="col-xs-6">
+            <h4>Break Set Up</h4>
+          </div>
+          <div class="col-xs-6">
+            <h4>Timer Set Up</h4>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <button type="button" id="breakMinusBtn" class="btn btn-primary btn-sm">-</button>
+            <button type="button" id="breakTime" class="btn btn-primary btn-sm">5</button>
+            <button type="button" id="breakPlusBtn" class="btn btn-primary btn-sm">+</button>
+          </div>
+          <div class="col-xs-6">
+            <button type="button" id="sessionMinusBtn" class="btn btn-primary btn-sm">-</button>
+            <button type="button" id="sessionTime" class="btn btn-primary btn-sm">25</button>
+            <button type="button" id="sessionPlusBtn" class="btn btn-primary btn-sm">+</button>
+          </div>
+        </div>
+      </article>
+      <br>
+
+      <!-- Zona del reloj -->
+      <article>
+        <div class="row">
+          <div class="col" id="status">
+            <p>Status</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" id="clock">
+            <i class="fa fa-clock-o fa-4x" aria-hidden="true"></i>
+            <p id="timer">25</p>
+          </div>
+        </div>
+      </article>
+    </section>
+   <footer>
+     <p></p>
+     <p>created by <a href="http://codepen.io/unaidelao/">Unai de la O</a></p>
+     <p>Copyright &copy; 2018</p>
+   </footer>
+
+   <!-- JQuery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <!-- my JS -->
+   <script src="index.js"></script>
+  </body>
+</html>

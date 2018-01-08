@@ -17,8 +17,8 @@ body{
   border:#355656 solid 2px;
   margin-bottom: 5px;
   background-color: grey;
-  height: 300px;
-  width: 250px;
+  height: auto;
+  width: 300px;
   font-family: 'Ubuntu Mono';
 }
 
@@ -30,6 +30,7 @@ body{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   text-align: right;
+  padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
 }

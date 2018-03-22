@@ -1,3 +1,3 @@
-This is a Pomodoro Clock. /* UNDER CONSTRUCTION */
+This is a Pomodoro Clock from freecodecamp.com
 
-Created at Codepen.io. See it: [URL]
+Created at Codepen.io. See it: https://codepen.io/unaidelao/full/yKgqdz/

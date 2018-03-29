@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <!-- my CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    
+    <div id="userChoice" class="wrapper">
+        <div id="chooseText"><p>Tic-Tac-Toe</p><p>You choose:</p></div>
+        <div class="set1"><button id="btnX" type="button" class="fa fa-times"></button></div>
+        <div class="set2"><button id="btnO" type="button" class="fa fa-circle-o"></button></div>
+        <div></div>
+    </div> <!-- end div userChoice -->
+    <div class="footer">
+      <p></p>
+      <p>created by <a href="http://codepen.io/unaidelao/">Unai de la O</a></p>
+      <p>Copyright &copy; 2018</p>
+    </div>
+    
+    <!-- OJO!! ESTA PARTE NO SE VISUALIZA BIEN. NO SALE BIEN EL GRID -->
+    <div id="game" class="wrapper">
+      <div id="gameText">Tic-Tac-Toe</div>
+        
+        <div class="none"></div>
+        <div id="firstRow" class="wrapper">
+          <div><button id="first" type="button" class="playBtn" name="empty"></button></div>
+          <div><button id="second" type="button" class="playBtn" name="empty"></button></div>
+          <div><button id="third" type="button" class="playBtn" name="empty"></button></div>
+        </div>
+        
+        <div class="none"></div>
+        <div class="none"></div>
+        <div id="secondRow" class="wrapper">
+          <div><button id="fourth" type="button" class="playBtn" name="empty"></button></div>
+          <div><button id="fifth" type="button" class="playBtn" name="empty"></button></div>
+          <div><button id="sixth" type="button" class="playBtn" name="empty"></button></div>
+        </div>
+        
+        <div class="none"></div>
+        <div class="none"></div>
+        <div id="thirdRow" class="wrapper">
+          <div><button id="seventh" type="button" class="playBtn" name="empty"></button></div>
+          <div><button id="eighth" type="button" class="playBtn" name="empty"></button></div>
+          <div><button id="nineth" type="button" class="playBtn" name="empty"></button></div>
+        </div>
+        
+        <div class="none"></div>
+        
+    </div> <!-- end div game -->
+      
+    <div class="greetings">
+      <p>Thanks for playing!!</p>
+      <p>You can check more projects at <a href="http://codepen.io/unaidelao/">my codepen page</a>!!</p>
+    </div>
+     
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- my JS -->
+    <script src="index.js"></script>
+  </body>
+</html>

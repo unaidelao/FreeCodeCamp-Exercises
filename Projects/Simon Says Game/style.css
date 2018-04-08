@@ -1,0 +1,103 @@
+body {
+  font: 20px/1.5 Arial, Helvetica, sans-serif;
+  padding:0px;
+  margin:0px;
+  text-align:center;
+}
+
+footer {
+  padding: 2px;
+  margin-top:30px;
+  background-color:#329D9D;
+  color:#355656;
+  font-size:14px;
+  text-align:center;
+}
+
+a{
+  color:lightgrey;
+  text-decoration:none;
+}
+
+a:hover{
+  color:red;
+}
+
+#displayZone {
+  margin-top: 10px;
+}
+
+#startBtnDiv, #strictBtn {
+  text-align: left;
+  margin-left: 90px;
+}
+
+
+#displayLed {
+  margin: 10px;
+  border: 3px solid black;
+  width: 60px;
+  height: 30px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#playZone {
+  position: relative;
+  display: inline-block;
+}
+
+#a {
+  background-color: darkgreen;
+}
+
+#a:hover {
+  background-color: forestgreen;
+  cursor: pointer;
+}
+
+#b {
+  background-color: red;
+}
+
+#b:hover {
+  background-color: indianred;
+  cursor: pointer;
+}
+
+#c {
+  background-color: gold;
+}
+
+#c:hover {
+  background-color: khaki;
+  cursor: pointer;
+}
+
+#d {
+  background-color: royalblue;
+}
+
+#d:hover {
+  background-color: skyblue;
+  cursor: pointer;
+}
+
+
+.playBtn {
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  display: inline-block;
+}
+
+
+.wrapper {
+  border: 3px solid darkslategrey;
+  width: 400px;
+  position: relative;
+  display: inline-block;
+}

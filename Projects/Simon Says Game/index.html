@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simon Game</title>
+    <!-- my CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <!-- GAME TITLE -->
+    <div id="title">
+      <h2>Simon Game || a FCC project</h2>
+    </div>
+    
+    <!-- wrapper for background-image -->
+    <div class="wrapper">
+    <!-- BUTTONS AND DISPLAY ZONE -->
+    <div id="displayZone">
+    
+      <!-- Start Button -->
+      <div id="startBtnDiv">
+        <button id="startBtn">Start / Restart</button>
+      </div>
+      
+      <!-- Strict checkbox -->
+      <div id="strictBtn">
+        <label><input type="checkbox" id="cbox1" value="strict_checkbox"> Strict</label>
+      </div>
+      
+      <!-- Display Led -->
+      <div id="displayLed"></div>
+    </div> <!-- end div displayZone -->
+    
+    <!-- COLORED BUTTONS ZONE (Play Zone) -->
+    <div id="playZone">
+      <div>
+        <!-- green button-->
+        <div id="a" class="playBtn"></div>
+        <!-- red button-->
+        <div id="b" class="playBtn"></div>
+      </div>
+      <div>
+        <!-- yellow button-->
+        <div id="c" class="playBtn"></div>
+        <!-- blue button-->
+        <div id="d" class="playBtn"></div>
+      </div>
+    </div> <!-- end div playZone -->
+    </div> <!-- end class wrapper -->
+    
+    <!-- FOOTER -->
+    <footer>
+     <p></p>
+     <p>created by <a href="http://codepen.io/unaidelao/">Unai de la O</a></p>
+     <p>Copyright &copy; 2018</p>
+   </footer>
+     
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- my JS -->
+    <script src="index.js"></script>
+  </body>
+</html>

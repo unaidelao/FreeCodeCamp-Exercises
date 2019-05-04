@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Survey Form</title>
+        <!-- my CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- title -->
+        <h1 id="title">Survey Form || a FCC project</h1>
+        <!-- FORM -->
+        <form id="survey-form">
+            <p>>>><span>This is a Survey Form about programmers.</span></p>
+
+            <!-- name -->
+            <div class="input-div">
+                <label id="name-label" class="go-right" for="name"
+                    >Name:
+                </label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter your name..."
+                    required
+                />
+            </div>
+
+            <!-- email -->
+            <div class="input-div">
+                <label id="email-label" class="go-right" for="email"
+                    >Email:
+                </label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email..."
+                    required
+                />
+            </div>
+
+            <!-- age -->
+            <div class="input-div">
+                <label id="age-label" class="go-right" for="age">Age: </label>
+                <input
+                    type="number"
+                    name="age"
+                    id="age"
+                    placeholder="¿What's your age?"
+                    min="1"
+                    max="100"
+                />
+            </div>
+
+            <!-- years programming -->
+            <div class="input-div">
+                <label id="number-label" class="go-right" for="number"
+                    >Years programming:
+                </label>
+                <input
+                    type="number"
+                    name="number"
+                    id="number"
+                    placeholder="Years programming..."
+                    min="0"
+                    max="75"
+                />
+            </div>
+
+            <!-- DROPDOWN, programming experience -->
+            <div class="input-div">
+                <label for="experience" class="go-right"
+                    >Your programming experience:
+                </label>
+                <select id="dropdown" name="experience">
+                    <option disabled value>Select an option</option>
+                    <option value="noobie">Noobie</option>
+                    <option value="junior">Junior Programmer</option>
+                    <option value="senior">Senior Programmer</option>
+                    <option value="expert">Expert Programmer</option>
+                </select>
+            </div>
+
+            <!-- RADIO GROUP, favourite OS -->
+            <div class="input-div">
+                <label for="favourite-os" class="go-right"
+                    >Choose your favourite OS:
+                </label>
+                <div class="radio-group">
+                    <input
+                        type="radio"
+                        name="favourite-os"
+                        value="Windows"
+                    />Windows<br />
+                    <input
+                        type="radio"
+                        name="favourite-os"
+                        value="Linux"
+                    />Linux<br />
+                    <input
+                        type="radio"
+                        name="favourite-os"
+                        value="Mac"
+                    />Mac<br />
+                    <input
+                        type="radio"
+                        name="favourite-os"
+                        value="Linux"
+                    />Solaris<br />
+                </div>
+            </div>
+
+            <!-- CHECKBOX, favourite programming languages -->
+            <div class="input-div">
+                <label for="favourite-languages" class="go-right"
+                    >Which of these are your favourite programming languages:
+                </label>
+                <div class="checkbox">
+                    <input
+                        type="checkbox"
+                        name="favourite-languages"
+                        value="Java"
+                    />Java<br />
+                    <input
+                        type="checkbox"
+                        name="favourite-languages"
+                        value="C#"
+                    />C#<br />
+                    <input
+                        type="checkbox"
+                        name="favourite-languages"
+                        value="JavaScript"
+                    />JavaScript<br />
+                    <input
+                        type="checkbox"
+                        name="favourite-languages"
+                        value="Lisp"
+                    />Lisp<br />
+                </div>
+            </div>
+
+            <!-- text area -->
+            <div class="input-div">
+                <label for="future-projects" class="go-right"
+                    >Future programming projects:
+                </label>
+                <textarea
+                    rows="10"
+                    cols="50"
+                    id="future-projects"
+                    name="future-projects"
+                    placeholder="Tell me about programming projects you have in mind..."
+                ></textarea>
+            </div>
+
+            <!-- submit button -->
+            <button id="submit" type="submit">Submit</button>
+        </form>
+
+        <!-- FOOTER -->
+        <footer>
+            <p></p>
+            <p>
+                created by
+                <a href="http://codepen.io/unaidelao/">Unai de la O</a>
+            </p>
+            <p>Copyright &copy; 2019</p>
+        </footer>
+    </body>
+</html>

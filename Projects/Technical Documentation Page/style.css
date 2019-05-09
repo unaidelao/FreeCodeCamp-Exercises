@@ -1,0 +1,75 @@
+#grid-layout {
+    display: grid;
+    grid-template-columns: minmax(250px, auto) 1fr;
+    grid-template-areas: "navbar main";
+    grid-gap: 1rem;
+}
+
+#navbar {
+    grid-area: navbar;
+    position: fixed;
+    background: lightsteelblue;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: purple;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#navbar a:hover {
+    background: lightgrey;
+}
+
+#main-doc {
+    grid-area: main;
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#main-doc header {
+    border-bottom: 1px solid purple;
+    color: #262626;
+}
+
+#navbar header {
+    color: lightsteelblue;
+    background: purple;
+    font-weight: 300;
+}
+
+.large-code {
+    display: block;
+    padding: 5px;
+    background: lightgrey;
+}
+
+.small-code {
+    background: lightgrey;
+}
+
+@media screen and (max-width: 650px) {
+    #grid-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas: "navbar" "main";
+    }
+
+    #navbar {
+        position: inherit;
+    }
+
+    #navbar header {
+        text-align: center;
+    }
+}

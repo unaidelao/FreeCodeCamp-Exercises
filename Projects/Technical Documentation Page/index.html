@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="author" content="Unai de la O" />
+        <!-- my CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <title>C# Technical Documentation Page</title>
+    </head>
+    <body>
+        <div id="grid-layout">
+            <!-- NAVBAR -->
+            <nav id="navbar">
+                <header>C# Documentation Page</header>
+                <a href="#Introduction" class="nav-link">Introduction</a>
+                <a href="#Statements" class="nav-link">Statements</a>
+                <a href="#Expressions" class="nav-link">Expressions</a>
+                <a href="#Operators" class="nav-link">Operators</a>
+                <a href="#Arrays" class="nav-link">Arrays</a>
+                <a href="#Strings" class="nav-link">Strings</a>
+            </nav>
+            <!-- MAIN -->
+            <main id="main-doc">
+                <!-- Introduction -->
+                <section id="Introduction" class="main-section">
+                    <header>Introduction</header>
+                    <p>
+                        This section provides detailed information on key C#
+                        language features and features accessible to C# through
+                        the .NET Framework.
+                    </p>
+                    <p>
+                        Most of this section assumes that you already know
+                        something about C# and general programming concepts. If
+                        you are a complete beginner with programming or with C#,
+                        you might want to visit the
+                        <a
+                            href="https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/index"
+                            >Introduction to C# Tutorials</a
+                        >
+                        or
+                        <a
+                            href="https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1"
+                            >Getting Started with C# interactive tutorial</a
+                        >
+                        , where no prior programming knowledge is required.
+                    </p>
+                    <p>
+                        For information about specific keywords, operators and
+                        preprocessor directives, see
+                        <a
+                            href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/index"
+                            >C# Reference</a
+                        >.
+                    </p>
+                    <p>
+                        For information about the C# Language Specification, see
+                        <a
+                            href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/introduction"
+                            >C# Language Specification</a
+                        >.
+                    </p>
+                    <p>
+                        In this documentation page, you will see C# examples of:
+                    </p>
+                    <ul>
+                        <li>Statemenst</li>
+                        <li>Expressions</li>
+                        <li>Operators</li>
+                        <li>Arrays</li>
+                        <li>Strings</li>
+                    </ul>
+                </section>
+                <!-- Statements -->
+                <section id="Statements" class="main-section">
+                    <header>Statements</header>
+                    <p>
+                        The actions that a program takes are expressed in
+                        statements. Common actions include declaring variables,
+                        assigning values, calling methods, looping through
+                        collections, and branching to one or another block of
+                        code, depending on a given condition. The order in which
+                        statements are executed in a program is called the flow
+                        of control or flow of execution. The flow of control may
+                        vary every time that a program is run, depending on how
+                        the program reacts to input that it receives at run
+                        time.
+                    </p>
+                    <p>
+                        A statement can consist of a single line of code that
+                        ends in a semicolon, or a series of single-line
+                        statements in a block. A statement block is enclosed in
+                        {} brackets and can contain nested blocks. The following
+                        code shows two examples of single-line statements, and a
+                        multi-line statement block:
+                    </p>
+                    <code class="large-code"
+                        >static void Main() { // Declaration statement. int
+                        counter; // Assignment statement. counter = 1; // Error!
+                        This is an expression, not an expression statement. //
+                        counter + 1; // Declaration statements with initializers
+                        are functionally // equivalent to declaration statement
+                        followed by assignment statement: int[] radii = { 15,
+                        32, 108, 74, 9 }; // Declare and initialize an array.
+                        const double pi = 3.14159; // Declare and initialize
+                        constant. // foreach statement block that contains
+                        multiple statements. foreach (int radius in radii) { //
+                        Declaration statement with initializer. double
+                        circumference = pi * (2 * radius); // Expression
+                        statement (method invocation). A single-line //
+                        statement can span multiple text lines because line
+                        breaks // are treated as white space, which is ignored
+                        by the compiler. System.Console.WriteLine("Radius of
+                        circle #{0} is {1}. Circumference = {2:N2}", counter,
+                        radius, circumference); // Expression statement (postfix
+                        increment). counter++; } // End of foreach statement
+                        block } // End of Main method body. } // End of
+                        SimpleStatements class. /* Output: Radius of circle #1 =
+                        15. Circumference = 94.25 Radius of circle #2 = 32.
+                        Circumference = 201.06 Radius of circle #3 = 108.
+                        Circumference = 678.58 Radius of circle #4 = 74.
+                        Circumference = 464.96 Radius of circle #5 = 9.
+                        Circumference = 56.55 */</code
+                    >
+                </section>
+                <!-- Expressions -->
+                <section id="Expressions" class="main-section">
+                    <header>Expressions</header>
+                    <p>
+                        An expression is a sequence of one or more operands and
+                        zero or more operators that can be evaluated to a single
+                        value, object, method, or namespace. Expressions can
+                        consist of a literal value, a method invocation, an
+                        operator and its operands, or a simple name. Simple
+                        names can be the name of a variable, type member, method
+                        parameter, namespace or type.
+                    </p>
+                    <p>
+                        Expressions can use operators that in turn use other
+                        expressions as parameters, or method calls whose
+                        parameters are in turn other method calls, so
+                        expressions can range from simple to very complex.
+                        Following are two examples of expressions:
+                    </p>
+                    <code class="large-code"
+                        >((x < 10) && ( x > 5)) || ((x > 20) && (x < 25));
+                        System.Convert.ToInt32("35");</code
+                    >
+                </section>
+                <!-- Operators -->
+                <section id="Operators" class="main-section">
+                    <header>Operators</header>
+                    <p>
+                        In C#, an operator is a program element that is applied
+                        to one or more operands in an expression or statement.
+                        Operators that take one operand, such as the increment
+                        operator <code class="small-code">(++)</code> or
+                        <code class="small-code">new</code>, are referred to as
+                        unary operators. Operators that take two operands, such
+                        as arithmetic operators
+                        <code class="small-code">(+,-,*,/)</code>, are referred
+                        to as binary operators. One operator, the conditional
+                        operator <code class="small-code">(?:)</code>, takes
+                        three operands and is the sole ternary operator in C#.
+                        The following C# statement contains a single unary
+                        operator and a single operand. The increment operator,
+                        <code class="small-code">++</code>, modifies the value
+                        of the operand <code class="small-code">y</code>.
+                    </p>
+                    <p>
+                        The following C# statement contains two binary
+                        operators, each with two operands. The assignment
+                        operator,
+                        <code class="small-code">=</code>>, has the integer
+                        variable <code class="small-code">y</code> and the
+                        expression <code class="small-code">2 + 3</code> as
+                        operands. The expression
+                        <code class="small-code">2 + 3</code> itself consists of
+                        the addition operator and two operands, 2 and 3.
+                    </p>
+                    <code class="large-code">y = 2 + 3;</code>
+                    <p>
+                        An operand can be a valid expression that is composed of
+                        any length of code, and it can comprise any number of
+                        sub expressions. In an expression that contains multiple
+                        operators, the order in which the operators are applied
+                        is determined by operator precedence, associativity, and
+                        parentheses.
+                    </p>
+                </section>
+                <!-- Arrays -->
+                <section id="Arrays" class="main-section">
+                    <header>Arrays</header>
+                    <p>
+                        You can store multiple variables of the same type in an
+                        array data structure. You declare an array by specifying
+                        the type of its elements.
+                    </p>
+                    <p>
+                        The following example creates single-dimensional,
+                        multidimensional, and jagged arrays:
+                    </p>
+                    <code class="large-code"
+                        >class TestArraysClass { static void Main() { // Declare
+                        a single-dimensional array int[] array1 = new int[5]; //
+                        Declare and set array element values int[] array2 = new
+                        int[] { 1, 3, 5, 7, 9 }; // Alternative syntax int[]
+                        array3 = { 1, 2, 3, 4, 5, 6 }; // Declare a two
+                        dimensional array int[,] multiDimensionalArray1 = new
+                        int[2, 3]; // Declare and set array element values
+                        int[,] multiDimensionalArray2 = { { 1, 2, 3 }, { 4, 5, 6
+                        } }; // Declare a jagged array int[][] jaggedArray = new
+                        int[6][]; // Set the values of the first array in the
+                        jagged array structure jaggedArray[0] = new int[4] { 1,
+                        2, 3, 4 }; } }</code
+                    >
+                </section>
+                <!-- Strings -->
+                <section id="Strings" class="main-section">
+                    <header>Strings</header>
+                    <p>
+                        A string is an object of type String whose value is
+                        text. Internally, the text is stored as a sequential
+                        read-only collection of Char objects. There is no
+                        null-terminating character at the end of a C# string;
+                        therefore a C# string can contain any number of embedded
+                        null characters ('\0'). The Length property of a string
+                        represents the number of
+                        <code class="small-code">Char</code> objects it
+                        contains, not the number of Unicode characters. To
+                        access the individual Unicode code points in a string,
+                        use the StringInfo object.
+                    </p>
+                    <p>
+                        You can declare and initialize strings in various ways,
+                        as shown in the following example:
+                    </p>
+                    <code class="large-code"
+                        >// Declare without initializing. string message1; //
+                        Initialize to null. string message2 = null; //
+                        Initialize as an empty string. // Use the Empty constant
+                        instead of the literal "". string message3 =
+                        System.String.Empty; //Initialize with a regular string
+                        literal. string oldPath = "c:\\Program Files\\Microsoft
+                        Visual Studio 8.0"; // Initialize with a verbatim string
+                        literal. string newPath = @"c:\Program Files\Microsoft
+                        Visual Studio 9.0"; // Use System.String if you prefer.
+                        System.String greeting = "Hello World!"; // In local
+                        variables (i.e. within a method body) // you can use
+                        implicit typing. var temp = "I'm still a strongly-typed
+                        System.String!"; // Use a const string to prevent
+                        'message4' from // being used to store another string
+                        value. const string message4 = "You can't get rid of
+                        me!"; // Use the String constructor only when creating
+                        // a string from a char*, char[], or sbyte*. See //
+                        System.String documentation for details. char[] letters
+                        = { 'A', 'B', 'C' }; string alphabet = new
+                        string(letters);</code
+                    >
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
